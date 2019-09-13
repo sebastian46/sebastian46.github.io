@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Me</title>
+	<link rel="stylesheet" href="assets/css/about.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/6266bc6ecd.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+	<!-- Desktop menu -->
+	<div class="topnavdesk">
+		<a class="active" href="index.html">Home</a>
+		<a href="about.html">About Me</a>
+		<a href="professional.html">Professional Image</a>
+		<a href="portfolio.html">Portfolio</a>
+		<a href="service.html">Service</a>
+		<a href="links.html">Links</a>
+	</div>
+
+	<!-- Mobile hamburger menu -->
+	<div class="topnavmob">
+	    <!-- The overlay -->
+	    <div id="myNav" class="overlay">
+			<!-- Button to close the overlay navigation -->
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-times" aria-hidden="true"></i></a>
+			<!-- Overlay content -->
+			<div class="overlay-content">
+				<a href="index.html">Home</a>
+				<a class="active" href="about.html">About Me</a>
+				<a href="professional.html">Professional Image</a>
+				<a href="portfolio.html">Portfolio</a>
+				<a href="service.html">Service</a>
+				<a href="links.html">Links</a>
+			</div>
+		</div>
+		<span class=hamburger-icn onclick="openNav()"><i class="fa fa-bars"></i></span>
+	</div>
+
+	<script type="text/javascript">
+		/* Open */
+		function openNav() {
+			document.getElementById("myNav").style.width = "100%";
+		}
+		/* Close */
+		function closeNav() {
+			document.getElementById("myNav").style.width = "0%";
+		}
+	</script>
+
+	<div class="introduction">
+		<h1>ABOUT ME</h1>
+		<p>Howdy! I'm a senior at Texas A&M University from Houston, TX and majoring in Computer Engineering. I chose Computer Engineering because I was not sure if I liked the hardware or software side of computers—only that I wanted a career where I worked with them closely. I started liking the Computer Science part more of my degree after taking a beginner programming class. I figured out how to make simple programs, which made me excited. Knowing that I had the power to create something that could help others was great. But alas, I only ended up making small programs that served very little use. I did have fun creating them of course. It was not until recently that I started taking a liking to front-end development (Javascript, React, HTML, CSS). I can instantly see what I'm doing, how good it looks, and it allows me to be creative, unlike the electrical engineering side of my degree. </p>
+		<br><br>
+		<p>As far as non-academics go, I enjoy playing chess and video games in my spare time. I also like to spend time with my pets (cat and a dog). </p>
+		<p>Here are some pictures:</p>
+		<div class="pets">
+			<p>
+			<!--<img src="images/dog.jpg" style="width:15%; height:15%">
+			<img src="images/cat.jpg" style="width:15%; height:15%">-->
+			<img src="images/dog.jpg">
+			<img src="images/cat.jpg">
+			</p>
+		</div>
+	</div>
+
+</body>
+</html>

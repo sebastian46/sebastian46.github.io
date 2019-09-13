@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Professional Image</title>
+	<link rel="stylesheet" href="assets/css/professional.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/6266bc6ecd.js"></script>
+</head>
+<body>
+	<!-- Desktop menu -->
+	<div class="topnavdesk">
+		<a class="active" href="index.html">Home</a>
+		<a href="about.html">About Me</a>
+		<a href="#Professional">Professional Image</a>
+		<a href="#Portfolio">Portfolio</a>
+		<a href="#Service">Service</a>
+		<a href="#Links">Links</a>
+	</div>
+
+	<!-- Mobile hamburger menu -->
+	<div class="topnavmob">
+	    <!-- The overlay -->
+	    <div id="myNav" class="overlay">
+			<!-- Button to close the overlay navigation -->
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-times" aria-hidden="true"></i></a>
+			<!-- Overlay content -->
+			<div class="overlay-content">
+				<a href="index.html">Home</a>
+				<a href="about.html">About Me</a>
+				<a class="active" href="professional.html">Professional Image</a>
+				<a href="portfolio.html">Portfolio</a>
+				<a href="service.html">Service</a>
+				<a href="links.html">Links</a>
+			</div>
+		</div>
+		<span class=hamburger-icn onclick="openNav()"><i class="fa fa-bars"></i></span>
+	</div>
+
+	<script type="text/javascript">
+		/* Open */
+		function openNav() {
+			document.getElementById("myNav").style.width = "100%";
+		}
+		/* Close */
+		function closeNav() {
+			document.getElementById("myNav").style.width = "0%";
+		}
+	</script>
+
+	<div class="introduction">
+		<h1><a type="button" target="_blank" onclick="location.href='images/Resume.pdf';">My Resume</h1>
+		<p><a type="button" onclick="location.href='images/Resume.pdf';"><b><u>Click me</u></b> if the resume below does not load</a></p>
+		<embed src="images/Resume.pdf" width="800px" height="1100px" />
+	</div>
+
+</body>
+</html>

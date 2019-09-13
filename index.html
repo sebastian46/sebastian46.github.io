@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" href="assets/css/home.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/6266bc6ecd.js"></script>
+</head>
+<body>
+	<!-- Desktop menu -->
+	<div class="topnavdesk">
+		<a class="active" href="index.html">Home</a>
+		<a href="about.html">About Me</a>
+		<a href="#Professional">Professional Image</a>
+		<a href="#Portfolio">Portfolio</a>
+		<a href="#Service">Service</a>
+		<a href="#Links">Links</a>
+	</div>
+
+	<!-- Mobile hamburger menu -->
+	<div class="topnavmob">
+	    <!-- The overlay -->
+	    <div id="myNav" class="overlay">
+			<!-- Button to close the overlay navigation -->
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-times" aria-hidden="true"></i></a>
+			<!-- Overlay content -->
+			<div class="overlay-content">
+				<a class="active" href="index.html">Home</a>
+				<a href="about.html">About Me</a>
+				<a href="professional.html">Professional Image</a>
+				<a href="portfolio.html">Portfolio</a>
+				<a href="service.html">Service</a>
+				<a href="links.html">Links</a>
+			</div>
+		</div>
+		<span class=hamburger-icn onclick="openNav()"><i class="fa fa-bars"></i></span>
+	</div>
+
+	<script type="text/javascript">
+		/* Open */
+		function openNav() {
+			document.getElementById("myNav").style.width = "100%";
+		}
+		/* Close */
+		function closeNav() {
+			document.getElementById("myNav").style.width = "0%";
+		}
+	</script>
+
+	<div class="introduction">
+		<h1>Hi!</h1>
+		<h1>I'm Sebastian Mendoza,</h1>
+		<h1>Future Software Engineer</h1>
+		<!-- put objective -->
+		<p>Click on the menu in the top right to navigate the site</p>
+	</div>
+
+</body>
+</html>

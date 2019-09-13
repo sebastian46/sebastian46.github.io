@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="assets/css/portfolio.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/6266bc6ecd.js"></script>
+</head>
+<body>
+	<!-- Desktop menu -->
+	<div class="topnavdesk">
+		<a class="active" href="index.html">Home</a>
+		<a href="about.html">About Me</a>
+		<a href="#Professional">Professional Image</a>
+		<a href="#Portfolio">Portfolio</a>
+		<a href="#Service">Service</a>
+		<a href="#Links">Links</a>
+	</div>
+
+	<!-- Mobile hamburger menu -->
+	<div class="topnavmob">
+		<!-- The overlay -->
+		<div id="myNav" class="overlay">
+			<!-- Button to close the overlay navigation -->
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-times" aria-hidden="true"></i></a>
+			<!-- Overlay content -->
+			<div class="overlay-content">
+				<a href="index.html">Home</a>
+				<a href="about.html">About Me</a>
+				<a href="professional.html">Professional Image</a>
+				<a class="active" href="portfolio.html">Portfolio</a>
+				<a href="service.html">Service</a>
+				<a href="links.html">Links</a>
+			</div>
+		</div>
+		<span class=hamburger-icn onclick="openNav()"><i class="fa fa-bars"></i></span>
+	</div>
+
+	<script type="text/javascript">
+		/* Open */
+		function openNav() {
+			document.getElementById("myNav").style.width = "100%";
+		}
+		/* Close */
+		function closeNav() {
+			document.getElementById("myNav").style.width = "0%";
+		}
+	</script>
+
+	<div class="introduction">
+		<h1>PORTFOLIO</h1>
+		<p>While I may not have a Turing Award, I believe I have made decent contributions to Computer Science. As mentioned in my service section, I go back to my high-school during the winter break and talk to the seniors there. Not only do I inform them of the mistakes I made during my first year, but I also tell them more about Computer Engineering/Science. My school did not have a Computer Science club, since most people were not interested in such a math heavy subject. This leaves many people, like myself, uninformed and left wondering about what major they should go in to. After shedding some light onto it, some students decide they want to pursue a career in Computer Science. This means someone who previously would not have given this major a chance will now be making their own contributions to it in the future. Making small contributions is as important as making big contributions. Without all the little parts no one thinks about, the main parts will never work or advance.</p>
+		<br><br>
+		<p>Here are some more small contributions from my GitHub account. I will regularly update this page to show what projects I liked working on and completed. Expect to see more front-end related projects in the future. But for now, here are my current 3 favorite projects to which I have uploaded code for.</p>
+		<br><br><br><br><br><br>
+	</div>
+
+	<div class="row">
+		<div class="column">
+			<div class="content">
+				<a href="https://github.com/sebastian46/Mountain_Paths" target="_blank"><img src="images/mountain.jpg" alt="Mountains" class="image" style="width:100%"></a>
+				<h3> Mountain Paths </h3>
+				<p> This project takes a bird's-eye view of a mountainous region in grayscale, where white signifies the highest point(s) and black signifies the lowest point(s). An output file will be given in .ppm form which highlights the easiest path (according to elevation change) in green. Other desirable paths will be highlighted in red.</p>
+			</div>
+		</div>
+		<div class="column">
+			<div class="content">
+				<a href="https://github.com/sebastian46/ECEN350_Processor" target="_blank"><img src="images/processor.jpg" alt="Processor" class="image" style="width:100%"></a>
+				<h3> Single-Cycle Processor </h3>
+				<p> This was a half-a-semester long project which I finished in a week (2 months prior to the due date). This is a very basic single-cycle processor. It can take in 64-bit instructions for addition, subtraction and storing/loading. </p>
+			</div>
+		</div>
+		<div class="column">
+			<div class="content">
+				<a href="https://github.com/sebastian46/Fourier_Series_Graph" target="_blank"><img src="images/fourier.png" alt="Series" class="image" style="width:100%"></a>
+				<h3> Fourier Series </h3>
+				<p> Simple program which shows the relationship between a square wave and a sine function. The more sine functions are added, the closer the sine graph gets to a square wave. <a href="https://en.wikipedia.org/wiki/Fourier_series">Read more here</a> </p>
+			</div>
+		</div>
+	</div>
+	<div style="width:100%; text-align:center;">
+		<div class="row">
+			<div class="column2">
+				<div class="content2">
+						<a href="https://github.com/sebastian46" target="_blank" ><img src="images/github-logo.png" alt="github" class="image" height="200" width="200"></a>
+						<h3>GitHub Account</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
