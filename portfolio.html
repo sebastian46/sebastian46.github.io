@@ -58,23 +58,43 @@
 	<div class="row">
 		<div class="column">
 			<div class="content">
+				<a href="https://github.com/sebastian46/Capstone-Project" target="_blank"><img src="images/capstone.png" alt="Processor" class="image" style="width:100%"></a>
+				<h3> Industrial Instrumentation System </h3>
+				<p> 
+					What: This project consists of 4 subsystems: power, GUI (physical), microcontroller, and web interface/database. I was in charge of the database/web interface subsystem. The whole system took in sensor inputs, converted the readings into numerical values, and displayed them on the GUI (physical) and web interface. For the web interface to receive information, the microconroller had to send values to the database (at least once per second). 
+					<br><br>
+					How: The frontend for this project was made using Javascript (d3.js, HTML, CSS, Boostrap, JQuery). The backend was made using PHP and a local MySQL database. 
+					<br><br>
+					Challenges and Solutions: This was the first time I worked in both the frontend and backend by myself. To solve this, I took a look at past projects where I'd done something similar and followed documentation found online. 
+				</p>
+			</div>
+		</div>
+		<div class="column">
+			<div class="content">
 				<a href="https://github.com/sebastian46/Mountain_Paths" target="_blank"><img src="images/mountain.jpg" alt="Mountains" class="image" style="width:100%"></a>
 				<h3> Mountain Paths </h3>
-				<p> This project takes a bird's-eye view of a mountainous region in grayscale, where white signifies the highest point(s) and black signifies the lowest point(s). An output file will be given in .ppm form which highlights the easiest path (according to elevation change) in green. Other desirable paths will be highlighted in red.</p>
+				<p> 
+					What: This project takes a bird's-eye view of a mountainous region in grayscale, where white signifies the highest point(s) and black signifies the lowest point(s). 
+					<br><br>
+					How: An output file will be given in .ppm form which highlights the easiest path (according to elevation change) in green. Other desirable paths will be highlighted in red.
+					<br><br>
+					Challenges, solutions, and possible improvements: This was one of my first coding projects. I had about 1 month of experience with coding before this. The biggest challenge was being overwhelmed and not knowing how to start. To solve this, I broke down the project into small sections (essentially Scrum Sprints). The program's runtime is not very good. There is nested for loops everywhere. One new approach I thought about a couple years after is using a pathfinding algorithm such as Dijkstra's algorithm. 
+				</p>
 			</div>
 		</div>
 		<div class="column">
 			<div class="content">
-				<a href="https://github.com/sebastian46/ECEN350_Processor" target="_blank"><img src="images/processor.jpg" alt="Processor" class="image" style="width:100%"></a>
-				<h3> Single-Cycle Processor </h3>
-				<p> This was a half-a-semester long project which I finished in a week (2 months prior to the due date). This is a very basic single-cycle processor. It can take in 64-bit instructions for addition, subtraction and storing/loading. </p>
-			</div>
-		</div>
-		<div class="column">
-			<div class="content">
-				<a href="https://github.com/sebastian46/Fourier_Series_Graph" target="_blank"><img src="images/fourier.png" alt="Series" class="image" style="width:100%"></a>
-				<h3> Fourier Series </h3>
-				<p> Simple program which shows the relationship between a square wave and a sine function. The more sine functions are added, the closer the sine graph gets to a square wave. <a href="https://en.wikipedia.org/wiki/Fourier_series">Read more here</a> </p>
+				<a href="https://github.com/sebastian46/CSCE_315_IMDB" target="_blank"><img src="images/imdb.png" alt="Series" class="image" style="width:100%"></a>
+				<h3> IMDB </h3>
+				<p> 
+					What: This project invovled storing all movies in a database (IMDB) and performing complex queries to get desired output.
+					<br><br>
+					How: The movies/shows (over 100,000) were stored in a PostgreSQL database and accessed with queries according to user specifiations.
+					<br><br>
+					My Part: My original part was to create an algorithm which outputs an actor who has performed in a movie every year from, for example, 2001-2010. However, I decided to also tackle one of the bonus questions which involved recommending a movie based on actor, year and genre. The actor could not be part of the movie in any way though.
+					<br><br>
+					Challenges and Solutions: One of the biggest technical issues was trying to optimize the runtime. My part would take over 10 minutes to run. To fix this, I decided to sacrifice the quality of recommendations. Instead of looking through all possible related films, I only chose about 20 to look at, and outputted 5.
+				</p>
 			</div>
 		</div>
 	</div>
